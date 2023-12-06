@@ -1,0 +1,41 @@
+:root {
+    --arrowpanel-menuitem-margin: 0 0 !important;
+    --arrowpanel-menuitem-border-radius: 0 !important;
+    --arrowpanel-menuitem-margin-inline: 0 !important;
+    --arrowpanel-menuitem-padding-inline: 8px !important;
+    --arrowpanel-header-min-height: 32px !important;
+}
+
+.panel-subview-body {
+    padding: 0 !important;
+}
+
+#appMenu-fxa-status2:not([fxastatus]) {
+    padding-block: 0 !important;
+}
+
+#appMenu-fxa-status2:not([fxastatus]) > #appMenu-fxa-label2 {
+    background-color: transparent !important;
+    margin-inline-end: -8px !important;
+    padding: 10px 12px !important;
+}
+
+#appMenu-fxa-status2:not([fxastatus]) > #appMenu-fxa-label2:hover {
+    background-color: var(--panel-item-hover-bgcolor) !important;
+}
+
+.panel-header {
+    min-height: unset !important;
+}
+
+.panel-header > .subviewbutton-back {
+    padding: 8px !important;
+}
+
+.PanelUI-subView .subviewbutton-nav::after {
+    margin-inline-end: -4px;
+}
+
+#appMenu-popup .panel-banner-item {
+    margin-bottom: unset !important;
+}

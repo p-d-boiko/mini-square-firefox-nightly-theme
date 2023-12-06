@@ -1,0 +1,23 @@
+menupopup,
+panel {
+    --arrow-panel-border-radius: 0 !important;
+    --panel-padding-block: 0 !important;
+    --panel-border-radius: 0 !important;
+
+    @media (-moz-platform: linux) or (-moz-platform: windows) {
+        & {
+            --panel-shadow-margin: 0 important;
+        }
+    }
+}
+
+menu,
+menuitem,
+menucaption {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+menupopup > menuitem {
+    padding-block: 8px !important;
+}

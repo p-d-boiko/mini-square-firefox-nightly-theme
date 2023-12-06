@@ -1,0 +1,20 @@
+.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
+    border-top: none !important;
+}
+
+#urlbar .search-one-offs:not([hidden]) {
+    padding-block: 0 !important;
+}
+
+.urlbarView-results {
+    padding-block: unset !important;
+}
+
+#urlbar[richSuggestionsEnabled] .urlbarView-row:not([rich-suggestion]),
+#urlbar[richSuggestionsEnabled] .urlbarView-row[rich-suggestion][icon-size="16"] {
+    border: none !important;
+}
+
+.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
+    border-top: none !important;
+}

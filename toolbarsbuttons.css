@@ -1,0 +1,8 @@
+:root {
+    --toolbarbutton-outer-padding: 0 !important;
+    --toolbar-start-end-padding: 0 !important;
+}
+
+#TabsToolbar .toolbarbutton-1 {
+    margin: 0 0 0 0 !important;
+}
