@@ -1,0 +1,15 @@
+:root {
+    --toolbarbutton-border-radius: 0 !important;
+    --toolbarbutton-outer-padding: 0 !important;
+}
+
+#navigator-toolbox {
+    border-bottom: none !important;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+panel toolbarseparator {
+    margin: 0 !important;
+    width: unset !important;
+}

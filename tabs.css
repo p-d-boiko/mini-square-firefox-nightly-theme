@@ -1,0 +1,38 @@
+:root {
+    --tab-min-height: 32px !important;
+    --tab-border-radius: 0 !important;
+    --tab-block-margin: 0 !important;
+    --arrowpanel-menuitem-margin-inline: 0 !important;
+}
+
+.tabbrowser-tab {
+    padding: 0 !important;
+}
+
+.tab-secondary-label {
+    display: none !important;
+}
+
+.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) {
+    .tab-icon-image {
+        opacity: 0 !important;
+    }
+}
+
+.tab-icon-overlay:not([crashed]) {
+    &:is([soundplaying], [muted], [activemedia-blocked]) {
+        opacity: 1 !important;
+    }
+}
+
+#tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
+    height: 32px !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+    margin-inline-start: unset !important;
+}
+
+.all-tabs-item {
+    margin-inline: 0;
+}
