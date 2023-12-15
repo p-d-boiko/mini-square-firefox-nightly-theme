@@ -1,20 +1,51 @@
-.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
-    border-top: none !important;
+:root {
+    --urlbarView-item-block-padding: 2px !important;
+    --urlbarView-icon-margin-end-narrow: 8px;
+    --urlbarView-height: 36px;
+}
+
+#urlbar .urlbarView {
+    border-inline: unset !important;
+    background-color: var(--toolbar-bgcolor) !important;
+
+    &:not([noresults]) > .search-one-offs:not([hidden]) {
+        border-top: none !important;
+    }
+
+    .urlbarView-row {
+        border: unset !important;
+        padding-block: var(--urlbarView-item-block-padding);
+
+        .urlbarView-favicon {
+            margin-inline-end: var(--urlbarView-icon-margin-end-narrow) !important;
+        }
+    }
+
+    .search-panel-header {
+        padding-left: var(--urlbarView-item-block-padding) !important;
+        align-self: stretch;
+    }
+
+    .searchbar-engine-one-off-item {
+        min-width: var(--urlbarView-height) !important;
+        height: var(--urlbarView-height) !important;
+        margin-inline: unset !important;
+    }
+
+    .search-setting-button {
+        max-height: unset !important;
+    }
+
+    .urlbarView-results {
+        padding-block: unset !important;
+    }
 }
 
 #urlbar .search-one-offs:not([hidden]) {
     padding-block: 0 !important;
 }
 
-.urlbarView-results {
-    padding-block: unset !important;
-}
-
 #urlbar[richSuggestionsEnabled] .urlbarView-row:not([rich-suggestion]),
 #urlbar[richSuggestionsEnabled] .urlbarView-row[rich-suggestion][icon-size="16"] {
     border: none !important;
-}
-
-.urlbarView:not([noresults]) > .search-one-offs:not([hidden]) {
-    border-top: none !important;
 }

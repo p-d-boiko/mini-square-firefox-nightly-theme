@@ -1,3 +1,7 @@
 :root {
     --arrowpanel-border-radius: 0 !important;
 }
+
+#nav-bar:not([tabs-hidden="true"]) {
+    box-shadow: none !important;
+}
