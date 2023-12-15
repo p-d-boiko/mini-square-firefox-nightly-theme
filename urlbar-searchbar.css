@@ -32,10 +32,6 @@ toolbaritem[style*="urlbar-container-height"] {
     border: none !important;
 }
 
-.urlbarView {
-    background-color: var(--toolbar-field-background-color);
-}
-
 .urlbar-page-action,
 #urlbar-go-button,
 .search-go-button {
