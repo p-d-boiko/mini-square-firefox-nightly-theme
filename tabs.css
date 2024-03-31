@@ -3,6 +3,7 @@
     --tab-border-radius: 0 !important;
     --tab-block-margin: 0 !important;
     --arrowpanel-menuitem-margin-inline: 0 !important;
+    --tab-selected-bgcolor: var(--toolbar-bgcolor) !important;
 }
 
 .tabbrowser-tab {
