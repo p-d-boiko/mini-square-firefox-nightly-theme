@@ -1,0 +1,20 @@
+:host(notification-message[message-bar-type="infobar"]:first-of-type) {
+    margin-top: 0;
+}
+
+:host(notification-message[message-bar-type="infobar"]) {
+    margin: 0;
+    border: unset !important;
+    border-radius: 0 !important;
+}
+
+:host(.infobar) {
+    & .container {
+        padding-block: 0 !important;
+        padding-right: 2px !important;
+    }
+}
+
+::slotted(.notification-button-container) {
+    gap: 2px;
+}

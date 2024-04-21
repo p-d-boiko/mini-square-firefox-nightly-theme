@@ -1,9 +1,10 @@
+@import "browser-shared.css";
+@import "global-shared.css";
+@import "infobar.css";
+@import "menu-shared.css";
+@import "panelUI-shared.css";
+@import "popup.css";
 @import "tabs.css";
 @import "toolbarsbuttons.css";
 @import "urlbar-searchbar.css";
-@import "browser-shared.css";
-@import "global-shared.css";
 @import "urlbarView.css";
-@import "popup.css";
-@import "panelUI-shared.css";
-@import "menu-shared.css";
