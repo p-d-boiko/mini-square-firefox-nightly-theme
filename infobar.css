@@ -1,20 +1,37 @@
-:host(notification-message[message-bar-type="infobar"]:first-of-type) {
-    margin-top: 0;
+:host(notification-message[message-bar-type="infobar"]:first-of-type),
+:host([message-bar-type="infobar"]:first-of-type) {
+    margin-top: 0 !important;
 }
 
-:host(notification-message[message-bar-type="infobar"]) {
-    margin: 0;
-    border: unset !important;
+:host(notification-message[message-bar-type="infobar"]),
+:host([message-bar-type="infobar"]) {
+    margin: 0 !important;
+    border: none !important;
     border-radius: 0 !important;
 }
 
+@media not (prefers-contrast) {
+    :host(.infobar) {
+        box-shadow: none !important;
+    }
+}
+
 :host(.infobar) {
+    padding-block: 0px !important;
+
     & .container {
         padding-block: 0 !important;
+        padding-right: 0 !important;
+        padding-inline: 8px !important;
         padding-right: 2px !important;
+    }
+
+    &::before {
+        border-start-start-radius: 0 !important;
+        border-end-start-radius: 0 !important;
     }
 }
 
 ::slotted(.notification-button-container) {
-    gap: 2px;
+    gap: 0 !important;
 }
