@@ -14,12 +14,11 @@ toolbaritem[style*="urlbar-container-height"] {
 }
 
 #urlbar[breakout] {
-    top: 0 !important;
-    width: 100%;
+    width: var(--urlbar-width);
 }
 
 #urlbar[breakout][breakout-extend] {
-    width: 100% !important;
+    width: var(--urlbar-width) !important;
 }
 
 #urlbar-background,
