@@ -18,3 +18,7 @@
 #blocked-permissions-container {
     gap: 4px;
 }
+
+.identity-box-button {
+    padding-inline: 8px !important;
+}
