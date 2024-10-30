@@ -27,7 +27,8 @@ toolbaritem[style*="urlbar-container-height"] {
     background-color: transparent !important;
 }
 
-#urlbar-input-container {
+#urlbar-input-container,
+.urlbar-input-container {
     border: none !important;
 }
 
@@ -37,4 +38,8 @@ toolbaritem[style*="urlbar-container-height"] {
     width: var(--urlbar-min-height) !important;
     height: var(--urlbar-min-height) !important;
     padding: calc(var(--urlbar-icon-padding) + 2px) !important;
+}
+
+#urlbar-searchmode-switcher {
+    padding-inline-start: 8px !important;
 }

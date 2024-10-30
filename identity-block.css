@@ -1,0 +1,20 @@
+#identity-box {
+    margin-inline-end: unset !important;
+}
+
+#identity-icon-box,
+#tracking-protection-icon-container {
+    width: 32px !important;
+    display: flex;
+    justify-content: center;
+}
+
+#identity-permission-box[open="true"],
+#identity-permission-box[hasPermissions],
+#identity-permission-box[hasSharingIcon] {
+    gap: 2px;
+}
+
+#blocked-permissions-container {
+    gap: 4px;
+}
