@@ -4,7 +4,6 @@
 
 #identity-icon-box,
 #tracking-protection-icon-container {
-    width: 32px !important;
     display: flex;
     justify-content: center;
 }

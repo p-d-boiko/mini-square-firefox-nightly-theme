@@ -10,22 +10,6 @@
     padding: 0 !important;
 }
 
-.tab-secondary-label {
-    display: none !important;
-}
-
-.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) {
-    .tab-icon-image {
-        opacity: 0 !important;
-    }
-}
-
-.tab-icon-overlay:not([crashed]) {
-    &:is([soundplaying], [muted], [activemedia-blocked]) {
-        opacity: 1 !important;
-    }
-}
-
 #tabbrowser-tabs:not([secondarytext-unsupported]) .tab-label-container {
     height: 32px !important;
 }
@@ -36,4 +20,13 @@
 
 .all-tabs-item {
     margin-inline: 0;
+}
+
+.tab-audio-button {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tab-secondary-label {
+    display: none !important;
 }
