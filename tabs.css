@@ -14,7 +14,9 @@
     height: 32px !important;
 }
 
-#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
+    > #tabbrowser-arrowscrollbox
+    > .tabbrowser-tab:nth-child(1 of :not([pinned], [hidden])) {
     margin-inline-start: unset !important;
 }
 
@@ -29,4 +31,18 @@
 
 .tab-secondary-label {
     display: none !important;
+}
+
+.tab-content .tab-icon-stack[soundplaying] .tab-icon-image {
+    display: none !important;
+}
+
+.tab-content .tab-icon-stack[soundplaying] .tab-icon-overlay {
+    position: unset !important;
+    top: unset !important;
+    inset-inline-end: unset !important;
+}
+
+.tab-content .tab-icon-stack[soundplaying] ~ .tab-audio-button {
+    margin-left: -4px;
 }
