@@ -67,3 +67,17 @@
         }
     }
 }
+
+:root:not([privatebrowsingmode])
+    :is(toolbarbutton, toolbarpaletteitem)
+    ~ #tabbrowser-tabs,
+:root[privatebrowsingmode]
+    :is(
+        toolbarbutton:not(#firefox-view-button),
+        toolbarpaletteitem:not(#wrapper-firefox-view-button)
+    )
+    ~ #tabbrowser-tabs {
+    border-inline-start: unset !important;
+    padding-inline-start: unset !important;
+    margin-inline-start: unset !important;
+}
