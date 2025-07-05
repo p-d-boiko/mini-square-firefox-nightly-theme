@@ -20,6 +20,10 @@
     margin-inline-start: unset !important;
 }
 
+.tab-label {
+    padding-bottom: 2px;
+}
+
 .all-tabs-item {
     margin-inline: 0;
 }
@@ -45,4 +49,21 @@
 
 .tab-content .tab-icon-stack[soundplaying] ~ .tab-audio-button {
     margin-left: -4px;
+}
+
+#pinned-tabs-container[orient="horizontal"] {
+    margin-inline-end: unset !important;
+}
+
+.tab-audio-button {
+    @media not -moz-pref("sidebar.visibility", "expand-on-hover") {
+        #tabbrowser-tabs[orient="horizontal"] &:not([pinned]):not([crashed]),
+        :root:not([sidebar-expand-on-hover])
+            #tabbrowser-tabs[orient="vertical"][expanded]
+            &:not([pinned]):not([crashed]) {
+            &:is([soundplaying], [muted], [activemedia-blocked]) {
+                display: flex !important;
+            }
+        }
+    }
 }
