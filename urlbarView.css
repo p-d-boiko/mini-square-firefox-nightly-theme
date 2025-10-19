@@ -7,6 +7,8 @@
 #urlbar .urlbarView {
     border-inline: unset !important;
     background-color: var(--toolbar-bgcolor) !important;
+    margin-inline: unset !important;
+    width: unset !important;
 
     &:not([noresults]) > .search-one-offs:not([hidden]) {
         border-top: none !important;
@@ -17,7 +19,9 @@
         padding-block: var(--urlbarView-item-block-padding);
 
         .urlbarView-favicon {
-            margin-inline-end: var(--urlbarView-icon-margin-end-narrow) !important;
+            margin-inline-end: var(
+                --urlbarView-icon-margin-end-narrow
+            ) !important;
         }
     }
 
@@ -46,6 +50,7 @@
 }
 
 #urlbar[richSuggestionsEnabled] .urlbarView-row:not([rich-suggestion]),
-#urlbar[richSuggestionsEnabled] .urlbarView-row[rich-suggestion][icon-size="16"] {
+#urlbar[richSuggestionsEnabled]
+    .urlbarView-row[rich-suggestion][icon-size="16"] {
     border: none !important;
 }

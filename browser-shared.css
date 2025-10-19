@@ -13,3 +13,7 @@ panel toolbarseparator {
     margin: 0 !important;
     width: unset !important;
 }
+
+#nav-bar {
+    border-top: unset !important;
+}

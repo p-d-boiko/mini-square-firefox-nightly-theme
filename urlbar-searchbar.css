@@ -8,11 +8,6 @@ toolbaritem[style*="urlbar-container-height"] {
     --urlbar-container-height: 32px !important;
 }
 
-#urlbar-container,
-#search-container {
-    padding-block: unset !important;
-}
-
 #urlbar[breakout] {
     width: var(--urlbar-width);
 }
@@ -41,5 +36,6 @@ toolbaritem[style*="urlbar-container-height"] {
 }
 
 #urlbar-searchmode-switcher {
-    padding-inline-start: 8px !important;
+    padding-inline-start: 10px !important;
+    background-color: unset !important;
 }
