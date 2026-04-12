@@ -43,3 +43,9 @@ toolbaritem[style*="urlbar-container-height"] {
     padding-inline-start: 10px !important;
     background-color: unset !important;
 }
+
+.urlbar-revert-button,
+.urlbar-go-button,
+.search-go-button {
+    border-radius: var(--urlbar-border-radius);
+}

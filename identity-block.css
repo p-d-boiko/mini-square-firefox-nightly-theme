@@ -8,10 +8,11 @@
     justify-content: center;
 }
 
+#identity-permission-box,
 #identity-permission-box[open="true"],
 #identity-permission-box[hasPermissions],
 #identity-permission-box[hasSharingIcon] {
-    gap: 2px;
+    gap: 0;
 }
 
 #blocked-permissions-container {
@@ -20,4 +21,11 @@
 
 .identity-box-button {
     padding-inline: 8px !important;
+}
+
+@media -moz-pref("browser.urlbar.trustPanel.featureGate") {
+    #trust-icon-container {
+        height: 100% !important;
+        padding-inline: 8px !important;
+    }
 }
