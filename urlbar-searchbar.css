@@ -16,10 +16,9 @@ toolbaritem[style*="urlbar-container-height"] {
     width: var(--urlbar-width) !important;
 }
 
-#urlbar-background,
+.urlbar-background,
 #searchbar {
     border: none !important;
-    background-color: transparent !important;
 }
 
 #urlbar-input-container,
@@ -28,7 +27,7 @@ toolbaritem[style*="urlbar-container-height"] {
 }
 
 .urlbar-input-container {
-    background-color: var(--toolbar-bgcolor);
+    background-color: var(--toolbar-background-color) !important;
 }
 
 .urlbar-page-action,
@@ -48,4 +47,8 @@ toolbaritem[style*="urlbar-container-height"] {
 .urlbar-go-button,
 .search-go-button {
     border-radius: var(--urlbar-border-radius);
+}
+
+.urlbar:is([focused], [open]) {
+    background-color: var(--toolbar-background-color) !important;
 }

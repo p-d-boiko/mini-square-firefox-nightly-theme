@@ -39,3 +39,11 @@
 #appMenu-popup .panel-banner-item {
     margin-bottom: unset !important;
 }
+
+#appMenu-mainView panel toolbarseparator {
+    padding-block: 0 !important;
+}
+
+.panel-subview-body .subviewbutton {
+    margin: 0 important!;
+}
