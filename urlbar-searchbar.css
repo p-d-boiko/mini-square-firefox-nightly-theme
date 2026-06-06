@@ -2,6 +2,7 @@
     --urlbar-min-height: 32px !important;
     --urlbar-margin-inline: 0 !important;
     --urlbar-container-padding: 0 !important;
+    --urlbar-input-container-padding: 0 !important;
 }
 
 toolbaritem[style*="urlbar-container-height"] {
@@ -28,6 +29,7 @@ toolbaritem[style*="urlbar-container-height"] {
 
 .urlbar-input-container {
     background-color: var(--toolbar-background-color) !important;
+    align-items: unset !important;
 }
 
 .urlbar-page-action,
