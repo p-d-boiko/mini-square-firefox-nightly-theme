@@ -4,6 +4,8 @@
     --arrowpanel-menuitem-margin-inline: 0 !important;
     --arrowpanel-menuitem-padding-inline: 8px !important;
     --arrowpanel-header-min-height: 32px !important;
+    --panel-menuitem-margin: 0 !important;
+    --panel-menuitem-padding: 8px 12px !important;
 }
 
 .panel-subview-body {
@@ -46,4 +48,12 @@
 
 .panel-subview-body .subviewbutton {
     margin: 0 important!;
+}
+
+panel toolbarseparator {
+    padding: unset !important;
+}
+
+#appMenu-fxa-sign-in-promo {
+    margin: 0 !important;
 }

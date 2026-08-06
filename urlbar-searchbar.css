@@ -11,6 +11,7 @@ toolbaritem[style*="urlbar-container-height"] {
 
 #urlbar[breakout] {
     width: var(--urlbar-width);
+    min-height: unset !important;
 }
 
 #urlbar[breakout][breakout-extend] {

@@ -26,7 +26,6 @@
 
 @media -moz-pref("browser.urlbar.trustPanel.featureGate") {
     #trust-icon-container {
-        height: 100% !important;
         padding-inline: 8px !important;
     }
 }
