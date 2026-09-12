@@ -1,0 +1,18 @@
+:root {
+    --urlbar-container-padding-block: unset !important;
+}
+
+.urlbar {
+    &[breakout] {
+        &:popover-open {
+            top: 0;
+            height: var(--urlbar-container-height) !important;
+        }
+    }
+}
+
+.urlbarView {
+    &:popover-open {
+        overflow-clip-margin: unset !important;
+    }
+}
