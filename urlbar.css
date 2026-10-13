@@ -16,3 +16,10 @@
         overflow-clip-margin: unset !important;
     }
 }
+
+.urlbar-background {
+    .urlbar[focused]:not([suppress-focus-border]) > & {
+        outline: none !important;
+        border: none !important;
+    }
+}
